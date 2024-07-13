@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="navbar_container">
+                <div class="logo">
+                    <img src="1sh logo.png" alt="MyLogo">
+                </div>
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#services">Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#contact">Contact</a>
+                            <div class="dropdown-content">
+                                <a href="tel:+1234567890">+1234567890</a>
+                                <a href="mailto:contact@example.com">contact@example.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Home Section</h1>
+            <p>Welcome to the home section.</p>
+        </section>
+        <section id="about">
+            <h1>About Section</h1>
+            <p>Welcome to the about section.</p>
+        </section>
+        <section id="services">
+            <h1>Services Section</h1>
+            <p>Welcome to the services section.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Section</h1>
+            <p>Welcome to the contact section.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

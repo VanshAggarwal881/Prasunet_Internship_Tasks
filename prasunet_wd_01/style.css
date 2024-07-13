@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+body ,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo{
+    /* border-radius: 50%; */
+}
+.logo img{
+    border-radius: 50%;
+    height: 70px;
+    width: 80px;
+}
+.menu .nav-list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu .nav-list .nav-item{
+    margin: 0 15px;
+    position: relative;
+}
+.nav-item a{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    text-decoration: none;
+    padding: 5px 10px;
+    /* transition: color 0.3s, background-color 0.3s, border-radius 0.3s; */
+
+}
+.nav-item a:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+.dropdown-content a:hover {
+    background-color: #e1e1e1;
+}
+.nav-item:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+.content{
+    padding-top: 80px;
+
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    text-align: center;
+    /* padding-top: 70px; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+    
+}
+#home {
+    background-color: peachpuff;
+}
+
+#about {
+    background-color: #e2e2e2;
+}
+
+#services {
+    background-color: #cccccc;
+}
+
+#contact {
+    background-color: #b2b2b2;
+}
