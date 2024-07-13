@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="iphone">
+        <div class="stopwatch">
+            <div class = "display" id="display">
+                00:00.00
+            </div>
+            <div class="controls">
+                
+                <button class = "lap" id="lap" onclick="lap()" disabled>Lap</button>
+
+                <button class="start" id="start" onclick="startstop()" >Start</button>
+            </div>
+
+            <!-- here the collected laps will be shown -->
+            <div id="lap_container" class="lap_container">
+                <div id="collectedlaps">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<!-- <script src="script.js"></script> -->
+</html>
