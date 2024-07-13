@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #7C90A0;
+    text-align: center;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7vh;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.game{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    display: none;
+}
+.box{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 8vh;
+    color: #52154E;
+    cursor: pointer;
+    background-color: white;
+}
+#reset{
+    padding: 2vh;
+    font-size: 3vh;
+    background-color: #4A525A;
+    color: white;
+    border-radius: 3vh;
+    width: 25vh;
+    border: 0;
+    cursor: pointer;
+}
+#winner{
+    margin-top: 4vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#menu {
+    display: flex;
+    gap: 2vh;
+    margin-bottom: 4vh;
+}
+#menu button {
+    padding: 2vh;
+    font-size: 3vh;
+    background-color: #4A525A;
+    color: white;
+    border-radius: 3vh;
+    border: 0;
+    cursor: pointer;
+    width: 25vh;
+}
