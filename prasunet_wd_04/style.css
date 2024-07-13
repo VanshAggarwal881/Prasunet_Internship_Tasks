@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none; 
+    /* removes the outline which appears when the search box is clicked */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    border: 3px solid white;
+    
+    width: 500px;
+    height: min-content;
+    background-color: white;
+    border-radius: 14px;
+    padding: 30px;
+}
+
+.search_box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_box input{
+    width: 85%;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: black;
+    background-color: rgb(215, 211, 211);
+    padding: 14px 18px;
+    border-radius: 14px;
+}
+
+.search_box input::placeholder{
+    color: black;
+}
+.search_box button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(215, 211, 211);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+.search_box button:hover{
+    background-color: silver;
+    color: white;
+}
+
+.weather_body{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather_body img{
+    width: 60%;
+}
+
+.weather_box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather_box .temperature{
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+}
+.weather_box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: bold;
+}
+.weather_box .description{
+   font-size: 20px; 
+   font-weight: bold;
+   text-transform: capitalize;
+}
+
+.weather_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity , .windspeed{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin-left: 10px;
+}
+.windspeed{
+    /* margin-right: 5px; */
+}
+.weather_details i{
+    font-size: 38px;
+
+}
+.weather_details .text{
+    margin-left: 15px;
+    font-size: 16px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.notfound{
+    margin-top: 35px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notfound img{
+    width: 85%;
+}
